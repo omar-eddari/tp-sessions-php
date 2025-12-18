@@ -48,10 +48,10 @@ $nombre_articles = array_sum(array_column($_SESSION['panier'], 'quantite'));
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.php">Produits</a>
+                        <a class="nav-link" href="index.php">Produits</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../panier.php">
+                        <a class="nav-link" href="panier.php">
                             <i class="bi bi-cart"></i>
                             <span class="badge bg-danger"><?php echo $nombre_articles; ?></span>
                         </a>
