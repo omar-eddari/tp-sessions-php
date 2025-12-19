@@ -67,13 +67,15 @@ $total = 0;
     <?php endif; ?>
 
     <!-- TODO 5: Ajouter les boutons d'action -->
-    <!-- Structure suggérée :
     <div class="d-flex justify-content-between mt-4">
-        - Bouton "Continuer les achats" (lien vers index.php)
+        <!--- Bouton "Continuer les achats" (lien vers index.php)
         - Formulaire pour vider le panier (POST vers actions/vider_panier.php)
-          avec un bouton "Vider le panier" (classe btn-danger)
+          avec un bouton "Vider le panier" (classe btn-danger)-->
+        <a href="index.php" class="btn btn-secondary">Continuer les achats</a>
+        <form method="POST" action="actions/vider_panier.php">
+            <button type="submit" class="btn btn-danger">Vider le panier</button>
+        </form>
     </div>
-    -->
 </div>
 
 <!-- TODO 6: Inclure Bootstrap JS -->
